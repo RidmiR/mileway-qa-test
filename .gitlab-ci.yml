@@ -1,0 +1,17 @@
+stages:
+  - test
+
+test:   
+  image: cypress/browsers:node-18.16.0-chrome-112.0.5615.121-1-ff-112.0.1-edge-112.0.1722.48-1
+  stage: test
+  script:
+    - npm install
+    - npm install cypress@10.9.0 --save-dev
+    - npx cypress --version
+    - npm run test
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos
+      - cypress/reports
+    expire_in: 30 day  
