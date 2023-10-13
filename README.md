@@ -12,7 +12,7 @@ This test project implemented with [cypress.io](https://www.cypress.io) test aut
 
 1. Get the test repo from below link listed
 
-    git clone git@github.com:RidmiR/mileway-qa-test.git
+    >git clone https://github.com/RidmiR/mileway-qa-test.git
 
 2. Install Cypress via npm
 
